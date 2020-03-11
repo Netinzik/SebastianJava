@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fatorial</title>
+	<meta charset="utf-8">
+	<script>
+		function fatorial() {
+			var fat=document.getElementById("numero").value;
+			var p;
+			var a=fat;
+			var g;
+			for(p=fat-1;p>1;p--){
+				a*=p;
+			}
+			var resu= "O fatorial de "+fat+" é igual a "+a+".";
+			document.getElementById("result").innerHTML=resu;
+		}
+	</script>
+</head>
+<body>
+	<input type="number" id="numero"/>
+	<button onclick="javascript:fatorial()">Executar</button>
+	<h3 id="result"></h3>
+</body>
+</html>
